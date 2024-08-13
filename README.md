@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-
 # Marketplace Built with Next.js 14
 
 Digital market place like app using NextJS
