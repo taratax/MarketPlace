@@ -21,8 +21,8 @@ const Page = () => {
         resolver: zodResolver(AuthCredentialsValidator),
     })
 
-    const data = trpc.anyApiRoute.useQuery()
-    console.log("GK data from reactQuery: ",data.data)
+    const {data} = trpc.anyApiRoute.useQuery()
+    console.log("GK data from reactQuery: ",data)
 
     const onSubmit = ({ email, password}: TAuthCredentialsValidator) => {
         // send data to the server
